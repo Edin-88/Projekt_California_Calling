@@ -1,0 +1,41 @@
+/* ===== Global Styles ===== */
+
+@import "fonts.scss";
+@import "classes.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+h1 {
+    font-family: "lora";
+    font-size: 7rem;
+}
+
+p, h3, a {
+    font-family: "work-sans";
+}
+
+
+//////////////////// HEADER ////////////////////
+header {
+    height: 100vh;
+    text-align: center;
+    margin: 0 10vw;
+    article {
+        margin-top: 4vh;
+        h3 {
+            padding-bottom: 3vh;
+        }
+        p {
+            padding-top: 3vh;
+        }
+    } 
+}

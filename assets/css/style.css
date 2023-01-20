@@ -1,0 +1,74 @@
+/* ===== Global Styles ===== */ /* Fonts */
+@font-face {
+  font-family: "work-sans";
+  src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "lora";
+  src: url("../fonts/Lora-VariableFont_wght.ttf");
+}
+/* Classes */
+.callingStyle {
+  display: block;
+  border-color: white;
+  -webkit-text-stroke: 1px #fff;
+  color: #000;
+}
+
+.linHight {
+  line-height: 85px;
+}
+
+.primaryButton {
+  color: #fff;
+  background: #000;
+  padding: 1vh 4vw;
+  border-color: #fff;
+}
+.primaryButton:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.flexcontainer1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+h1 {
+  font-family: "lora";
+  font-size: 7rem;
+}
+
+p, h3, a {
+  font-family: "work-sans";
+}
+
+header {
+  height: 100vh;
+  text-align: center;
+  margin: 0 10vw;
+}
+header article {
+  margin-top: 4vh;
+}
+header article h3 {
+  padding-bottom: 3vh;
+}
+header article p {
+  padding-top: 3vh;
+}
+
+/*# sourceMappingURL=style.css.map */
