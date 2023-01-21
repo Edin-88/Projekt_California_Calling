@@ -27,5 +27,13 @@
 .flexcontainer1 {
     display: flex;
     justify-content: space-between;
-    margin-top: 15vh; 
+}
+
+.lineHightText {
+    line-height: 1.5rem;
+}
+
+.lineHightHeadlines {
+    line-height: 5rem;
+    padding-bottom: 2vh;
 }

@@ -19,6 +19,11 @@ h1 {
     font-size: 7rem;
 }
 
+h2 {
+    font-family: "lora";
+    font-size: 6rem;
+}
+
 p, h3, a {
     font-family: "work-sans";
 }
@@ -26,9 +31,11 @@ p, h3, a {
 
 //////////////////// HEADER ////////////////////
 header {
-    height: 100vh;
     text-align: center;
-    margin: 0 10vw;
+    margin: 0 5vw;
+    nav {
+        margin-top: 20vh;
+    }
     article {
         margin-top: 4vh;
         h3 {
@@ -38,4 +45,90 @@ header {
             padding-top: 3vh;
         }
     } 
+}
+
+//////////////////// MAIN ////////////////////
+main {
+    .introSectionBlackBckg {
+        margin: 10vh auto 5vh 5vw;
+        h2 {
+            width: 75vw;
+        }
+        .introText {
+            margin-bottom: -50vh;        
+            background-image: url("../img/map.svg");
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: bottom right 5%; 
+            padding-bottom: 70vh;
+            line-height: 6rem;
+        }
+    }
+     //  Images Area
+     .imagesSection {
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        img {
+            width: 25vw;
+            display: block;
+        }
+        .imgOne {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            transform: translate(-3vw, -12vh);
+        }
+        .imgTwo {
+            width: 20vw;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            transform: translateX(4vw);
+        }
+        .imgSectionText1 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            transform: translate(5vw, 10vh);
+            width: 38vw; 
+            color: #000;
+        }
+        .imgThree {
+            grid-column: 3/4;
+            grid-row: 4/5;
+            transform: translateY(7vh); 
+            width: 20vw;
+            height: 25vh;
+            margin: 0 0 0 auto;
+        }
+        .imgFour {
+            grid-column: 1/2;
+            grid-row: 6/7;
+            transform: translateX(15vw);
+            padding-top: 7vh;
+        }
+        .imgFife {
+            grid-column: 2/3;
+            grid-row: 7/8;
+            transform: translate(27vw, -3vh);
+        }
+        .imgSix {
+            grid-column: 1/2;
+            grid-row: 8/9;
+            width: 20vw;
+            height: 25vh;
+            transform: translateY(5vh);
+        }
+        .imgSectionText2 {
+            width: 35vw;
+            margin-top: 2vh;
+            color: #000;
+            grid-column: 2/3;
+            grid-row: 8/9;
+            transform: translateY(10vh);
+        }
+        .imgSeven {
+            grid-column: 2/3;
+            grid-row: 9/10;
+            transform: translate(20vw, 10vh);
+        }
+     }    
 }
