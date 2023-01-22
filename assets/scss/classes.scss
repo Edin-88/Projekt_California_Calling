@@ -16,7 +16,7 @@
 .primaryButton {
     color: #fff;
     background: #000;
-    padding: 1vh 4vw;
+    padding: 2vh 4vw;
     border-color: #fff;
 &:hover {
     background-color: #fff;
@@ -24,9 +24,15 @@
 }
 }
 
-.flexcontainer1 {
+.flexContainer1 {
     display: flex;
     justify-content: space-between;
+}
+
+.flexContainer2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .lineHightText {

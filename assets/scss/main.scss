@@ -2,6 +2,7 @@
 
 @import "fonts.scss";
 @import "classes.scss";
+@import "mixin.scss";
 
 * {
     margin: 0;
@@ -130,5 +131,144 @@ main {
             grid-row: 9/10;
             transform: translate(20vw, 10vh);
         }
-     }    
+     }  
+
+     
+     ////////////////////  The Golden Bear Section ////////////////////
+     .goldenBearSection {
+        margin: 20vh 10vw 0vh 5vw;
+        position: relative;
+        h2 {
+            width: 20vw;
+        }
+        h3 {
+            padding-bottom: 2vh;
+        }
+        p:nth-of-type(1) {
+            width: 25vw;
+            font-size: 1.5rem;
+            padding-bottom: 3vh;
+        }
+         ///////////  images  //////////
+        .goldenBearSectionImg {
+            text-align: center;
+            img:nth-of-type(1) {
+                transform: translate(6vw, 10vh);
+            }
+            img:nth-of-type(2) {
+                transform: translate(-2vw, -7vh);
+            }
+        }
+     }
+
+
+     ////////////////////  The Proppy Bear Section ////////////////////
+     .poppyBearSection {
+        background-color: #fff;
+        color: #000;
+        position: relative;
+        overflow-x: hidden;
+ ///////////  Rotating Circle 0deg -> 360deg //////////
+        #rotatingCircle {
+            position: absolute;
+            top: -8%;
+            right: -7%;
+            animation: rotatingCircle 10s infinite linear;
+        }
+        @keyframes rotatingCircle {
+            from  {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg); 
+            }
+        }
+        h2 {
+            width: 20vw;
+        }
+        h3 {
+            padding-bottom: 2vh;
+        }
+        p:nth-of-type(1) {
+            width: 25vw;
+            font-size: 1.5rem;
+            padding-bottom: 3vh;
+        }
+        div {
+            margin: 40vh 5vw 0vh 5vw;
+        }
+        ///////////  images  //////////
+
+        .proppyBearSectionImg {
+            text-align: center;
+            position: relative;
+            img:nth-of-type(1) {
+            position: absolute;
+            top: -25vh;
+            left: 10vw;
+            }
+            img:nth-of-type(2) {
+                margin: -40vh 0 20vh 20vw;             
+            }
+        }
+     }
 }
+
+
+//////////////////// Footer ////////////////////
+footer {
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    .footerBanner {
+        @include footerBannerFontSize;
+        background-color: #fff;
+        color: #000;
+        width: 1900px; 
+        transform: rotate(40deg) translateY(140%); 
+    }
+    .footerBannerAnimation {
+        font-family: "lora";
+        span {
+            -webkit-text-stroke: 1px #000;
+            color: #fff; 
+        }
+        animation: footerBanner 3s linear infinite alternate;
+        @keyframes footerBanner {
+            from {transform: translateX(0%); }
+            to {transform: translateX(40%); }
+        }
+    }
+    .footerText {
+        margin-left: 5vw;
+        h3 {
+            padding-bottom: 2vh;
+        }
+        p {
+            width: 25vw;
+            font-size: 1.5rem;
+            padding-bottom: 4vh;
+        }
+    }
+            /////////// footer nav //////////
+        nav {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            padding: 25vh 20vw 0 5vw; 
+            .socialMediaLogo  {        
+            div img {
+                width: 40px; 
+                padding: 5px; 
+                }
+            p {
+                margin: 2vh 0; 
+                }
+            }
+            .ngoLogo {
+                img {
+                    width: 7vw; 
+                }
+            }
+        }
+    }

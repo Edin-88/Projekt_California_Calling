@@ -1,0 +1,8 @@
+///// Mixins
+@import "fonts.scss";
+
+@mixin footerBannerFontSize {
+    font-size: 6rem;
+    font-variation-settings: "wght" 1000;
+    text-transform: uppercase;
+}
